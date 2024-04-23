@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import {motion} from "framer-motion"
 
@@ -6,13 +6,20 @@ import {motion} from "framer-motion"
 
 export default function Navbar() {
 
-    const links = ["Hello","About Me","Projects","Contact Me"]
+    const [active,setActive] = useState("home")
   return (
     <div class="navbar">
         <ul class="link_box">
-            <li class="links active" id="home"><a href="#home">Home</a></li>
-            <li class="links" id="about-me "><a href="#about_me">About Me</a></li>
-            <li class="links" id="contact-me"><a href="#contact_me">Contact Me</a></li>
+            <li class="links active" id="home" onClick={(e)=>{
+              window.scrollTo(0,0);
+            }}><a href="#home">Home</a></li>
+            <li class="links" id="about-me " onClick={(e)=>{
+              window.scrollTo(0,800);
+            }}><a href="#about_me">About Me</a></li>
+            <li class="links" id="contact-me" onClick={(e)=>{
+              window.scrollTo(0,1600);
+            }}
+            ><a href="#contact_me">Contact Me</a></li>
             {/* <!-- <li class="links"><a href="#cv">Download CV</a></li> --> */}
         </ul>
     </div>

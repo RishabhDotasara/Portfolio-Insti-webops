@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function AboutMe() {
+  
   return (
     <section class="section about_me" id="about_me">
       <h1 class="heading">About Me</h1>
       <div className="cards">
         <div class="card">
-          <div class="title">Education</div>
+          <div class="title">Projects</div>
           <div class="description">
             <ul class="list">
-              <li class="points">- Passed 10th standard with 98%</li>
-              <li class="points">- Passed 12th standara with 93.4%</li>
-              <li class="points">
-                - Cleared Jee Advance with <br />
-                AIR 5719
-              </li>
-              <li class="points">- Pursuing B.Tech at IIT Madras</li>
+              <li class="points">- <a href="https://github.com/RishabhDotasara/BlogProject2">CRUD App in Django Python</a></li>
+              <li class="points">- <a>NaP</a></li>
+              <li class="points">- <a>NaP</a></li>
+              <li class="points">- <a>NaP</a></li>
+
+              
             </ul>
           </div>
         </div>
