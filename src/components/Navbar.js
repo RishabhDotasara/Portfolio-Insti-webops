@@ -1,14 +1,24 @@
-import React, { useState } from 'react'
-
+import React, { useEffect, useState } from 'react'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 
 
 export default function Navbar() {
 
-    const [active,setActive] = useState("home")
+    const [active,setActive] = useState(false)
+    const [menuactive,setMenuActive] = useState(false);
+    let sWid = window.innerWidth;
+
+    useEffect(()=>{
+      if(sWid > 900)
+      {
+        setMenuActive(true)
+      }
+    },[])
   return (
     <div class="navbar">
-        <ul class="link_box">
+        <div className="hamburger" onClick={()=>{setMenuActive(!menuactive)}}><GiHamburgerMenu/></div>
+        {menuactive && (<ul class="link_box">
             <li class="links" id="home" onClick={(e)=>{
               window.scrollTo(0,0);
             }}><a href="#home">Home</a></li>
@@ -20,7 +30,8 @@ export default function Navbar() {
             }}
             ><a href="#contact_me">Contact Me</a></li>
             {/* <!-- <li class="links"><a href="#cv">Download CV</a></li> --> */}
-        </ul>
+        </ul>)}
+        
     </div>
   )
 }
