@@ -122,9 +122,10 @@
 
 /* HOME PAGE  */
 section {
-  height: 100vh;
+  /* height: 100vh; */
   width: 98vw;
   background-color: #1c1923;
+  min-height: 100vh;
 }
 
 .home {
@@ -132,6 +133,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  /* background-color: red; */
 }
 
 .home .img
@@ -149,8 +151,9 @@ section {
 
 .home .wrapper
 {
-  background-color: blue;
+  /* background-color: blue; */
   width: 45vw;
+  min-height: 300px;
 }
 .home .wrapper .head {
   font-size: 150px;
@@ -207,17 +210,19 @@ section {
   align-items: center;
   flex-direction: column;
   padding-top: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   /* gap: 20px; */
-  position: relative;
+  /* position: relative; */
 }
 
 .about_me .cards
 {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center ;
 }
 
 .about_me .heading
@@ -365,7 +370,7 @@ section {
   justify-content: center;
   /* background-color: red; */
   height: 60%;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .contact_me .wrapper .card .info a 
@@ -380,5 +385,55 @@ section {
   width:18em ;
 }
 
-/* creating animations with scroll using only css */
+@media screen and (max-width:900px) {
+  .home
+  {
+    flex-direction: column;
+    padding: 40px 0;
+  }
 
+  .home .wrapper
+  {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+  }
+  .home .wrapper .head
+  {
+    font-size: 7rem;
+  }
+  .home .wrapper .main
+  { 
+    font-size: 2rem;
+  }
+  .home .wrapper .main::after
+  {
+    font-size: 2rem;
+  }
+
+  .home .img 
+  {
+    background-color: yellow;
+  }
+
+  .about_me .cards
+  {
+    flex-direction: column;
+  }
+
+  .contact_me 
+  {
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .contact_me .wrapper 
+  {
+    gap: 20px;
+  }
+}

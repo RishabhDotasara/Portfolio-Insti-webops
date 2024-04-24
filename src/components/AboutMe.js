@@ -10,7 +10,7 @@ export default function AboutMe() {
           <div class="title">Projects</div>
           <div class="description">
             <ul class="list">
-              <li class="points">- <a href="https://github.com/RishabhDotasara/BlogProject2">CRUD App in Django Python</a></li>
+              <li class="points">- <a href="https://github.com/RishabhDotasara/BlogProject2">Blog App in Django Python</a></li>
               <li class="points">- <a>NaP</a></li>
               <li class="points">- <a>NaP</a></li>
               <li class="points">- <a>NaP</a></li>

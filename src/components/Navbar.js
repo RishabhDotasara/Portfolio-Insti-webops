@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { RxHamburgerMenu } from "react-icons/rx";
-import {motion} from "framer-motion"
+
 
 
 
@@ -10,7 +9,7 @@ export default function Navbar() {
   return (
     <div class="navbar">
         <ul class="link_box">
-            <li class="links active" id="home" onClick={(e)=>{
+            <li class="links" id="home" onClick={(e)=>{
               window.scrollTo(0,0);
             }}><a href="#home">Home</a></li>
             <li class="links" id="about-me " onClick={(e)=>{
