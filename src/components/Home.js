@@ -8,9 +8,9 @@ export default function Home() {
         <div class="head">Hi !</div>
         <div class="main">I'm</div>
       </div>
-      <div class="img">
-        <img src="./images/image.png" alt="My personal image" />
-      </div>
+     
+        <div  className="img"/>
+      
     </section>
   );
 }

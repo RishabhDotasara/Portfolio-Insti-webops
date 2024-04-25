@@ -10,6 +10,11 @@
   /* overflow-x: hidden; */
 }
 
+body 
+{
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar
 {
   width: 5px;
@@ -128,7 +133,7 @@
 /* HOME PAGE  */
 section {
   /* height: 100vh; */
-  width: 98vw;
+  width: 100vw;
   background-color: #1c1923;
   min-height: 100vh;
 }
@@ -145,11 +150,17 @@ section {
 {
   height: 400px;
   width: 400px;
+  margin-bottom: 120px;
   background: transparent;
-
-  /* -webkit-mask-image: url("images.png"); */
+  background-repeat: no-repeat;
+  background-image: url("./images/image.png");
+  /* object-fit: fill; */
+  /* -webkit-mask-image: url("./images/image.png"); */
   -webkit-mask-size: contain;
   z-index: 0;
+  flex: 0.5;
+  background-position: center;
+  
 }
 
 

@@ -14,7 +14,7 @@ export default function Navbar() {
       {
         setMenuActive(true)
       }
-    },[])
+    },[sWid])
   return (
     <div class="navbar">
         <div className="hamburger" onClick={()=>{setMenuActive(!menuactive)}}><GiHamburgerMenu/></div>
